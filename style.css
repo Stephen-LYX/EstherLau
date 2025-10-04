@@ -172,7 +172,6 @@ nav a:hover::after {
   flex-wrap: wrap;
   gap: 3rem;
   animation: fadeInUp 1s ease 0.3s both;
-  margin: 0 5rem;
 }
 
 .image_slider {
@@ -231,7 +230,6 @@ footer {
   .img_desc_slider {
     flex-direction: column;
     text-align: center;
-    margin: 0;
   }
 
   .intro_desc {
