@@ -1,4 +1,8 @@
 /* --- General Layout --- */
+html {
+  font-size: 125%;  
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 75px 2rem 0 2rem;
+  padding: 4.8rem 2rem 0 2rem;
 }
 
 /* --- Navigation --- */
@@ -65,9 +69,30 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav a.active {
+  color: #667eea; /* same color as hover */
+  font-weight: 600;
+}
+
+nav a.active::after {
+  width: 100%; /* keep underline visible */
+}
+
+/* Presents nav_logo from getting affected by other <a> tag css */
+nav a.nav_logo,
+nav a.nav_logo:hover {
+  color: inherit;              /* keep normal text color */
+  pointer-events: auto;        /* optional, keeps link clickable */
+}
+
+nav a.nav_logo::after,
+nav a.nav_logo:hover::after {
+  content: none !important;    /* remove underline effect */
+}
+
 .avatar_icon {
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 3.125rem;
+  min-height: 3.125rem;
   background-color: yellow;
   border-radius: 50%;
   display: flex;
@@ -150,7 +175,7 @@ nav a:hover::after {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 6rem 0 1.5rem;
+  margin: 7rem 0 1.5rem;
   position: relative;
   animation: fadeInUp 1s ease;
 }
@@ -243,4 +268,69 @@ footer {
   .about_me {
     font-size: 2rem;
   }
+}
+
+
+/* CSS for about.html */
+.about_me2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 1rem 0 1.5rem;
+  position: relative;
+  animation: fadeInUp 1s ease;
+}
+
+.about_me2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.image_slider2 {
+  flex: 1;
+  min-width: 400px;
+  height: 25rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_desc2 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 510px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  color: #4a5568;
+  font-size: 1rem;
+  padding: 2rem;
+  margin: 0;
+  line-height: 1.5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img_desc_slider2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  gap: 3rem;
+  animation: fadeInUp 1s ease 0.3s both;
 }
