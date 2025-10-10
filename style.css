@@ -338,3 +338,16 @@ footer {
   gap: 3rem;
   animation: fadeInUp 1s ease 0.3s both;
 }
+
+/* Career Page */
+.resume_container img, 
+.resume_container a{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.resume_container a {
+  margin-top: 2rem;
+  text-align: center;
+}
