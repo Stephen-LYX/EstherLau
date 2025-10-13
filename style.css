@@ -85,18 +85,18 @@ nav a.nav_logo:hover::after {
   content: none !important;    /* remove underline effect */
 }
 
+.nav_right_icon {
+  max-height: 4rem;
+  max-width: 4rem;
+  border-radius: 50%;
+}
+
 .avatar_icon {
   min-width: 3.125rem;
   min-height: 3.125rem;
-  background-color: yellow;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
-  font-weight: 600;
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
 }
 
 /* --- Introduction Section --- */
