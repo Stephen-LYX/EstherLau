@@ -20,7 +20,7 @@ Deployment:
 - Live Demo: https://stephen-lyx.github.io/EstherLau/
 
 Credits:
-Designed and developed by: Stephen Lau
-Portfolio owner: Esther Lau [Bachelor of Medicine, Bachelor of Surgery (MBSS) Candidate, Universiti Tunku Abdul Rahman (UTAR)]
+- Designed and developed by: Stephen Lau
+- Portfolio owner: Esther Lau [Bachelor of Medicine, Bachelor of Surgery (MBSS) Candidate, Universiti Tunku Abdul Rahman (UTAR)]
 
 -- End --
